@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@900&family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f0f0;
+        }
+        .banner {
+            background-image: url('https://img.freepik.com/premium-photo/spain-flag-flagpole-blue-sky-background-spanish-flag-waving-wind-background-sky-with-white-clouds-place-text-3d-illustration_630687-909.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+            min-height: 150px;
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+        }
+        .title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            position: relative;
+            z-index: 1;
+            font-weight: 600;
+            color: white; /* Changed to white */
+        }
+        .subtitle {
+            font-size: 1.2rem; /* Made smaller */
+            margin-top: 0.5rem;
+            font-weight: 400;
+            color: white; /* Changed to white */
+            position: relative; /* Added to make it on the same layer as title */
+            z-index: 1; /* Added to make it on the same layer as title */
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+        .content p {
+            transition: transform 0.3s ease-in-out; /* Added transition effect */
+        }
+        .content p:hover {
+            transform: scale(1.05); /* Added hover effect */
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .photos img {
+            width: 30%;
+            margin: 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .photos img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div style="position: relative; z-index: 1;"> <!-- Added to group title and subtitle together -->
+            <h1 class="title">Todo Sobre Mi</h1>
+            <p class="subtitle">By Asher</p>
+        </div>
+    </div>
+    <div class="content">
+        <p>Hola, me llamo Asher. Tengo catorce años. Voy al colegio Saint Kentigern. Estudio siete asignaturas. Mi asignatura favorita es las ciencias porque son divertidas. Mi colegio es un instituto mixto con chicos y chicas y tenemos el uniforme. Mi colegio empieza a las nueve menos veinte y termina a las trece y media. Hay veinte aulas y cinco laboratorios y una biblioteca y un gimnasio. Mi instituto tiene trescientos alumnos y veinte profesores. Normalmente llego a las ocho y media en autobús al colegio.</p>
+    </div>
+    <div class="photos">
+        <img src="https://www.saintkentigern.com/files/4915/5737/9628/Saint-Kentigern-Middle-College-and-Senior-College.jpg" alt="Saint Kentigern College">
+        <img src="https://thumbor.bigedition.com/dominican-republic/Vw9NdLkt9P41B0sFoOw3GcinSiY=/800x0/filters:quality(80)/granite-web-prod/16/37/163726a2905a4abc8f3b17abbda2367e.jpeg" alt="Dominican Republic">
+        <img src="https://hblimg.mmtcdn.com/content/hubble/img/Bulk_International/mmt/activities/m_Madrid_1-min_l_664_1000.jpg" alt="Madrid">
+    </div>
+</body>
+</html>
